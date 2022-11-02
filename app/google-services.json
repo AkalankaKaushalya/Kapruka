@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "356285945121",
+    "project_id": "kapruka-735ae",
+    "storage_bucket": "kapruka-735ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356285945121:android:da73ff5591d508b64e1a60",
+        "android_client_info": {
+          "package_name": "com.kapruka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356285945121-mcdb9e7c1dbpkcquktq8hfpd92h168au.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcaUDEzlkuEZSpa2DGsFIQoUaNb6d8b90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356285945121-mcdb9e7c1dbpkcquktq8hfpd92h168au.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

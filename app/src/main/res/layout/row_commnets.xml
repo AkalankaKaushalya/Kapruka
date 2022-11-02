@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/img_profile"
+            app:riv_oval="true" />
+
+        <LinearLayout
+            android:id="@+id/commentbodyLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/profileIv"
+            android:background="@drawable/shape_commnet_bg"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/usernameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:text="Nisal Sanjula"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/decicnationTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/nunito_bold"
+                    android:paddingStart="5dp"
+                    android:text="Admin"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/commnetTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="500"
+                android:paddingStart="5dp"
+                android:text="Lore is an American horror anthology television series developed by the creator of the podcast of the same name, Aaron Mahnke, with Valhalla Entertainment and Propagate Content."
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commentbodyLL"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/profileIv"
+            android:padding="3dp"
+            android:text="5h"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</layout>

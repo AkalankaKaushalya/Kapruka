@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AdminFragments.DashBoardFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/askyourq_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:reverseLayout="true"
+            app:stackFromEnd="true" />
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fabmenuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="55dp"
+            app:fab_addButtonColorNormal="@color/purple_500"
+            fab:fab_labelStyle="@style/menu_labels_style">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_addvideo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_add_video"
+                app:fab_colorNormal="@color/purple_500"
+                fab:fab_title="Add Vidos" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_adddisease"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_hospital"
+                app:fab_colorNormal="@color/purple_500"
+                fab:fab_title="Add Disease" />
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
+</layout>

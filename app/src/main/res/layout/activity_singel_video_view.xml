@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".SingelVideoViewActivity">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/videoVv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hide_during_ads="true"
+            app:resize_mode="fit"
+            app:use_controller="true" />
+    </RelativeLayout>
+</layout>

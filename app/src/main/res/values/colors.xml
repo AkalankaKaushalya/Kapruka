@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_200">#62F840</color>
+    <color name="yello_200">#F8C440</color>
+    <color name="purple_200">#9CFC86</color>
+    <color name="purple_500">#00EE20</color>
+    <color name="purple_700">#27B300</color>
+    <color name="teal_200">#03DA39</color>
+    <color name="teal_700">#01874D</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="about_text">#8b8b8b</color>
+    <color name="about_title">#353535</color>
+    <color name="transpeant">@android:color/transparent</color>
+</resources>

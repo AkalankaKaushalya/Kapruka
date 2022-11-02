@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFragments.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/homeRR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/usernameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/amiko_semibold"
+                    android:paddingStart="10dp"
+                    android:text="Hello Akalanka"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileIv"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/img_profile"
+                    app:riv_corner_radius_bottom_left="5dp"
+                    app:riv_corner_radius_bottom_right="5dp"
+                    app:riv_corner_radius_top_left="5dp"
+                    app:riv_corner_radius_top_right="5dp"
+                    app:riv_oval="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/homeRR1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homeRR"
+                android:layout_marginTop="-18dp">
+
+                <TextView
+                    android:id="@+id/home_titleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/balsamiq_sans_bold"
+                    android:paddingStart="10dp"
+                    android:text="Let's Grow Healthy\nCoconut Trres"
+                    android:textColor="@color/black"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ytvideos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homeRR1"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/head_yt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/group_yttitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toStartOf="@+id/view_alltopsale"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/nunito_bold"
+                        android:lines="1"
+                        android:text="Instructional Video"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/group_yttitle"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_green_line" />
+
+                    <Button
+                        android:id="@+id/view_alltopsale"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:maxLength="15"
+                        android:text="More"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ytvideos_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/head_yt"
+                    android:nestedScrollingEnabled="true"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:reverseLayout="true"
+                    app:stackFromEnd="true" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/nolottie1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/head_yt"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="coconut_tree.json"
+                    app:lottie_loop="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/disease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ytvideos"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/head_disease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/group_diseasetitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toStartOf="@+id/view_disease"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/nunito_bold"
+                        android:lines="1"
+                        android:text="Diseases affecting coconut cultivation"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/group_diseasetitle"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_green_line" />
+
+                    <Button
+                        android:id="@+id/view_disease"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/bg_button"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:maxLength="15"
+                        android:text="More"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp" />
+                </RelativeLayout>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/nolottie"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/head_disease"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="coconut_tree.json"
+                    app:lottie_loop="true" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/disease_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/head_disease"
+                    android:nestedScrollingEnabled="true"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:reverseLayout="true"
+                    app:stackFromEnd="true" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

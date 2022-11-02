@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/diseaseIv"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bamy"
+                app:riv_corner_radius_bottom_left="10dp"
+                app:riv_corner_radius_top_left="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/diseaseIv"
+                android:paddingStart="3dp">
+
+                <TextView
+                    android:id="@+id/disease_titleTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="කඳෙන් ලේ ගැලීම"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <io.github.mthli.knife.KnifeText
+                    android:id="@+id/disease_descriptionTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/disease_titleTv"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:maxLines="3"
+                    android:text="පොල් ගසේ කඳේ ඉරිතැලීම් වලින් රතු දුඹුරු දියර නිස්සාරණය කිරීම ඔබ දැක ඇති. කාලයාගේ ඇවෑමෙන්, පොල් කඳේ ඉරිතැලීම් ඇති වන අතර එමඟින් දියර එහි පටක දිරාපත් වන රෝග වලින් එකක් බවට පත් වන අතර එමඟින් අස්වැන්න අඩු වේ."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/disease_dateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/disease_descriptionTv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="5dp"
+                    android:maxLines="3"
+                    android:text="01/12/2000"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/disease_descriptionTv"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_eye" />
+
+                    <TextView
+                        android:id="@+id/viewcountTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:text="10"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

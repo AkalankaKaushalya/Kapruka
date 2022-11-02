@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UserFragments.ProfileFragment">
+
+        <View
+            android:id="@+id/relativeBlue"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/purple_500" />
+
+        <ImageButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/transpeant"
+            android:src="@drawable/ic_logout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/usertypeTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito_bold"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:text="User"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profileIv"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="@drawable/circle_my_selector"
+                            android:src="@drawable/img_profile"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="1dp"
+                            tools:ignore="UnusedAttribute" />
+
+                        <RelativeLayout
+                            android:id="@+id/layoutCameraGallery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/profileIv"
+                            android:layout_alignBottom="@+id/profileIv"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginBottom="0dp"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="2dp"
+                                android:src="@color/white"
+                                android:visibility="visible"
+                                app:civ_border_color="@color/grey_font"
+                                app:civ_border_width="1dp"
+                                app:civ_circle_background_color="@color/white" />
+
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_centerInParent="true"
+                                android:contentDescription=""
+                                android:padding="3dp"
+                                android:src="@drawable/ic_add_image"
+                                app:tint="@color/green_200" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@color/grey_font" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="7dp">
+
+                        <TextView
+                            android:id="@+id/lblname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="@font/nunito_semi_bold"
+                            android:text="User Name"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/usernameTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito_bold"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:text="User nmae"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_font" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="7dp">
+
+                        <TextView
+                            android:id="@+id/lblemail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Email"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/emailTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito_bold"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:text="Email"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_font" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="7dp">
+
+                        <TextView
+                            android:id="@+id/lblcity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Mobaile"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/cityTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito_bold"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:text="Mobaile"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fabmenuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="55dp"
+            app:fab_addButtonColorNormal="@color/purple_500"
+            fab:fab_labelStyle="@style/menu_labels_style">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_askadmin"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_add_video"
+                app:fab_colorNormal="@color/purple_500"
+                fab:fab_title="Ask Admin" />
+
+            <!--        <com.getbase.floatingactionbutton.FloatingActionButton-->
+            <!--            android:id="@+id/fab_adddisease"-->
+            <!--            android:layout_width="35dp"-->
+            <!--            android:layout_height="35dp"-->
+            <!--            android:src="@drawable/ic_hospital"-->
+            <!--            app:fab_colorNormal="@color/purple_500"-->
+            <!--            fab:fab_title="" />-->
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
+</layout>

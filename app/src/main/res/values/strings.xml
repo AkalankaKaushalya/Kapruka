@@ -1,0 +1,491 @@
+<resources>
+    <string name="app_name">Kapruka</string>
+    <string-array name="array_agetree">
+        <item>Select age of the coconut tree</item>
+        <item>1 ~ 5 Years</item>
+        <item>6 ~ 10 Years</item>
+        <item>11 ~ 15 Years</item>
+        <item>16 ~ 20 Years</item>
+        <item>20 + Years</item>
+    </string-array>
+    <string-array name="srilanka_city">
+        <item>Select Your City</item>
+        <item>Addalaichchenai</item>
+        <item>Akkarepattu</item>
+        <item>Alayadivembu</item>
+        <item>Ampara</item>
+        <item>Damana</item>
+        <item>Dehiattakandiya</item>
+        <item>Irakkamam</item>
+        <item>Kalmunai</item>
+        <item>Karaitivu</item>
+        <item>Lahugala</item>
+        <item>Maha Oya</item>
+        <item>Navithanveli</item>
+        <item>Nintavur</item>
+        <item>Padiyathalawa </item>
+        <item>Pottuvil</item>
+        <item>Sainthamaruthu</item>
+        <item>Sammanthurai</item>
+        <item>Uhana </item>
+        <item>Araiyampathy</item>
+        <item>Batticaloa </item>
+        <item>Chenkalady </item>
+        <item>Eravur</item>
+        <item>Kaluvanchikudy</item>
+        <item>Kattankudy </item>
+        <item>Kiran </item>
+        <item>Kokkadichcholai</item>
+        <item>Oddamavadi </item>
+        <item>Pasikudah</item>
+        <item>Vakarai</item>
+        <item>Valaichchenai </item>
+        <item>Vavunathivu</item>
+        <item>Vellavely</item>
+        <item>Gomarankadawala</item>
+        <item>Kantalai</item>
+        <item>Kinniya</item>
+        <item>Kuchchaveli</item>
+        <item>Morawewa</item>
+        <item>Muttur</item>
+        <item>Seruvila</item>
+        <item>Siripura</item>
+        <item>Thampalakamam </item>
+        <item>Trincomalee</item>
+        <item>Verugal</item>
+        <item>Anuradhapura</item>
+        <item>Bulnewa</item>
+        <item>Eppawala</item>
+        <item>Galenbindunuwewa</item>
+        <item>Galnewa</item>
+        <item>Ganewalpola</item>
+        <item>Habarana</item>
+        <item>Horowupotana</item>
+        <item>Ipalogama</item>
+        <item>Kahatagasdigiliya</item>
+        <item>Kebithigollewa</item>
+        <item>Kebitigollawa </item>
+        <item>Kekirawa</item>
+        <item>Konapathirawa </item>
+        <item>Konwewa</item>
+        <item>Madatugama </item>
+        <item>Mahailuppallama</item>
+        <item>Mahavilachchiya</item>
+        <item>Maradankadawala</item>
+        <item>Medawachchiya </item>
+        <item>Mihintale</item>
+        <item>Nochchiyagama </item>
+        <item>Padaviya</item>
+        <item>Palagala</item>
+        <item>Palugaswewa</item>
+        <item>Rajanganaya</item>
+        <item>Rambewa</item>
+        <item>Seeppukulama</item>
+        <item>Talawa</item>
+        <item>Tambuttegama</item>
+        <item>Thambuttegama </item>
+        <item>Thirappane </item>
+        <item>Yakalla</item>
+        <item>Aralaganwila</item>
+        <item>Bakamuna</item>
+        <item>Dimbulagala</item>
+        <item>Elahera</item>
+        <item>Galamuna</item>
+        <item>Giritale</item>
+        <item>Hingurakgoda</item>
+        <item>Jayantipura</item>
+        <item>Kaduruwela </item>
+        <item>Lankapura</item>
+        <item>Manampitiya</item>
+        <item>Medirigiriya</item>
+        <item>Minneriya</item>
+        <item>Polonnaruwa</item>
+        <item>Sungawila</item>
+        <item>Welikanda</item>
+        <item>Badulla</item>
+        <item>Bandarawela</item>
+        <item>Beragala</item>
+        <item>Diyatalawa </item>
+        <item>Ella</item>
+        <item>Haldummulla</item>
+        <item>Hali Ela</item>
+        <item>Haputale</item>
+        <item>Kandaketiya</item>
+        <item>Lunugala</item>
+        <item>Mahiyanganaya </item>
+        <item>Meegahakivula </item>
+        <item>Passara</item>
+        <item>tennapanguwa</item>
+        <item>Uva-Paranagama</item>
+        <item>Welimada</item>
+        <item>Wiyaluwa</item>
+        <item>Badalkumbura</item>
+        <item>Bibile</item>
+        <item>Buttala</item>
+        <item>Kataragama </item>
+        <item>Madulla</item>
+        <item>Medagama</item>
+        <item>Moneragala </item>
+        <item>Okkampitiya</item>
+        <item>Sevanagala </item>
+        <item>Siyambalanduwa</item>
+        <item>Tanamalwila</item>
+        <item>Wellawaya</item>
+        <item>Angoda</item>
+        <item>Athurugiriya</item>
+        <item>Avissawella</item>
+        <item>Battaramulla</item>
+        <item>Boralesgamuwa </item>
+        <item>Colombo 01 </item>
+        <item>Colombo 02 </item>
+        <item>Colombo 03 </item>
+        <item>Colombo 04 </item>
+        <item>Colombo 05 </item>
+        <item>Colombo 06 </item>
+        <item>Colombo 06 </item>
+        <item>Colombo 07 </item>
+        <item>Colombo 08 </item>
+        <item>Colombo 09 </item>
+        <item>Colombo 10 </item>
+        <item>Colombo 11 </item>
+        <item>Colombo 12 </item>
+        <item>Colombo 13 </item>
+        <item>Colombo 14 </item>
+        <item>Colombo 15 </item>
+        <item>Dehiwala</item>
+        <item>Hanwella</item>
+        <item>Homagama</item>
+        <item>Kaduwela</item>
+        <item>Kesbewa</item>
+        <item>Kohuwala</item>
+        <item>Kolonnawa</item>
+        <item>Kosgama</item>
+        <item>Kottawa</item>
+        <item>Kotte </item>
+        <item>Maharagama </item>
+        <item>Malabe</item>
+        <item>Mount Lavinia </item>
+        <item>Nawala</item>
+        <item>Nugegoda</item>
+        <item>Paddukka</item>
+        <item>Pannipitiya</item>
+        <item>Piliyandala</item>
+        <item>Rajagiriya </item>
+        <item>Ranala</item>
+        <item>Ratmalana</item>
+        <item>Talawathugoda </item>
+        <item>Wellampitiya</item>
+        <item>Attanagalla</item>
+        <item>Biyagama</item>
+        <item>Delgoda</item>
+        <item>Divlapitiya</item>
+        <item>Dompe </item>
+        <item>Gampaha</item>
+        <item>Ganemulla</item>
+        <item>Ja-Ela</item>
+        <item>Kadawatha</item>
+        <item>Kandana</item>
+        <item>Katana</item>
+        <item>Katunayake </item>
+        <item>Kelaniya</item>
+        <item>Kiribathgoda</item>
+        <item>Mahara</item>
+        <item>Minuwangoda</item>
+        <item>Mirigama</item>
+        <item>Negombo</item>
+        <item>Nittambuwa </item>
+        <item>Ragama</item>
+        <item>Veyangoda</item>
+        <item>Wattala</item>
+        <item>Agalawatta </item>
+        <item>Aluthgama</item>
+        <item>Baduraliya </item>
+        <item>Bandaragama</item>
+        <item>Beruwala</item>
+        <item>Bulathsinhala </item>
+        <item>Dodangoda</item>
+        <item>Horana</item>
+        <item>Ingiriya</item>
+        <item>Kalutara</item>
+        <item>Madurawela </item>
+        <item>Matugama</item>
+        <item>Millaniya</item>
+        <item>Panadura</item>
+        <item>Wadduwa</item>
+        <item>Walallavita</item>
+        <item>Ahangama</item>
+        <item>Ahungalla</item>
+        <item>Ambalangoda</item>
+        <item>Baddegama</item>
+        <item>Balapitiya </item>
+        <item>Batapola</item>
+        <item>Bentota</item>
+        <item>Boossa</item>
+        <item>Elpitiya</item>
+        <item>Galle </item>
+        <item>Habaraduwa </item>
+        <item>Hikkaduwa</item>
+        <item>Hiniduma</item>
+        <item>Imaduwa</item>
+        <item>Karandeniya</item>
+        <item>Karapitiya </item>
+        <item>Koggala</item>
+        <item>Kosgoda</item>
+        <item>Mapalagama </item>
+        <item>Nagoda</item>
+        <item>Neluwa</item>
+        <item>Pitigala</item>
+        <item>Rathgama</item>
+        <item>Thawalama</item>
+        <item>Udugama</item>
+        <item>Uragasmanhandiya</item>
+        <item>Wanduramba </item>
+        <item>Yakkalamulla</item>
+        <item>Ambalantota</item>
+        <item>Angunukolapelessa</item>
+        <item>Beliatta</item>
+        <item>Hambantota </item>
+        <item>Middeniya</item>
+        <item>Tangalla</item>
+        <item>Tissamaharama </item>
+        <item>Walasmulla </item>
+        <item>Weeraketiya</item>
+        <item>Athuraliya </item>
+        <item>Akuressa</item>
+        <item>Aparekka</item>
+        <item>Denipitiya </item>
+        <item>Deniyaya</item>
+        <item>Devinuwara </item>
+        <item>Dikwella</item>
+        <item>Gandara</item>
+        <item>Hakmana</item>
+        <item>Kamburugamuwa </item>
+        <item>Kamburupitiya </item>
+        <item>Karaputugala</item>
+        <item>Kekanadura </item>
+        <item>Kirinda</item>
+        <item>Kotapola</item>
+        <item>Malimbada</item>
+        <item>Matara</item>
+        <item>Mirissa</item>
+        <item>Morawaka</item>
+        <item>Mulatiyana </item>
+        <item>Pasgoda</item>
+        <item>Pitabeddara</item>
+        <item>Puhuwella</item>
+        <item>Thelijjawila</item>
+        <item>Thihagoda</item>
+        <item>Tihagoda</item>
+        <item>Weligama</item>
+        <item>Welihinda</item>
+        <item>Welipitiya </item>
+        <item>Chankanai</item>
+        <item>Chavakachcheri</item>
+        <item>Jaffna</item>
+        <item>Karainagar </item>
+        <item>Karaveddy</item>
+        <item>Kayts </item>
+        <item>Kopay </item>
+        <item>Maruthankerney</item>
+        <item>Nallur</item>
+        <item>Point Pedro</item>
+        <item>Sandilipay </item>
+        <item>Tellippalai</item>
+        <item>Uduvil</item>
+        <item>Velanai</item>
+        <item>Iranamadu</item>
+        <item>Kandavalai </item>
+        <item>Kilinochchi</item>
+        <item>Pallai</item>
+        <item>Paranthan</item>
+        <item>Poonakary</item>
+        <item>Velikkandal</item>
+        <item>Adampan</item>
+        <item>Chilawathurai </item>
+        <item>Madhu </item>
+        <item>Mannar</item>
+        <item>Nanaddan</item>
+        <item>Ehatugaswewa</item>
+        <item>Mullativu</item>
+        <item>Oddusuddan </item>
+        <item>Pandiyankulam </item>
+        <item>Puthukkudiyiruppu</item>
+        <item>Thunukkai</item>
+        <item>Vavuniya</item>
+        <item>Nedunkeni</item>
+        <item>Cheddikulam</item>
+        <item>Akurana</item>
+        <item>Alawatugoda</item>
+        <item>Ambatenna</item>
+        <item>Ampitiya</item>
+        <item>Daskara</item>
+        <item>Daulagala</item>
+        <item>Delthota</item>
+        <item>Digana</item>
+        <item>Galagedara </item>
+        <item>Galhinna</item>
+        <item>Gampola</item>
+        <item>Gelioya</item>
+        <item>Hanguranketa</item>
+        <item>Hapugastalawa </item>
+        <item>Harispattuwa</item>
+        <item>Hatharaliyadda</item>
+        <item>Kadugannawa</item>
+        <item>Kadugannawa UC</item>
+        <item>Kandy </item>
+        <item>Katugastota</item>
+        <item>Kundasale</item>
+        <item>Madawala</item>
+        <item>Madawala Bazaar</item>
+        <item>Menikdiwela</item>
+        <item>Minipe</item>
+        <item>Nawalapitiya</item>
+        <item>Pallekele</item>
+        <item>Panvila</item>
+        <item>Pathadumbara</item>
+        <item>Pathahewaheta </item>
+        <item>Peradeniya </item>
+        <item>Pilimatalawa</item>
+        <item>Poojapitiya</item>
+        <item>Pussellawa </item>
+        <item>Talatuoya</item>
+        <item>Teldeniya</item>
+        <item>Thumpane</item>
+        <item>Udapalatha </item>
+        <item>Ududumbara </item>
+        <item>Udunuwara</item>
+        <item>Ulapane</item>
+        <item>Watadeniya </item>
+        <item>Wattegama</item>
+        <item>Welamboda</item>
+        <item>Yatinuwara </item>
+        <item>Dambulla</item>
+        <item>Elkaduwa</item>
+        <item>Galewela</item>
+        <item>Gammaduwa</item>
+        <item>Inamaluwa</item>
+        <item>Kaikawala</item>
+        <item>Kibissa</item>
+        <item>Laggala Pallegama</item>
+        <item>Madawala Ulpotha</item>
+        <item>Matale</item>
+        <item>Nalanda</item>
+        <item>Naula </item>
+        <item>Palapathwela</item>
+        <item>Pallepola</item>
+        <item>Rattota</item>
+        <item>Sigiriya</item>
+        <item>Ukuwela</item>
+        <item>Wahacotte</item>
+        <item>Yatawatta</item>
+        <item>Agrapatana </item>
+        <item>Ambewela</item>
+        <item>Bogawantalawa </item>
+        <item>Bopattalawa</item>
+        <item>Dayagama</item>
+        <item>Ginigathena</item>
+        <item>Haggala</item>
+        <item>Hapugastalawa </item>
+        <item>Hatton</item>
+        <item>Kotagala</item>
+        <item>Kotmale</item>
+        <item>Labukele</item>
+        <item>Laxapana</item>
+        <item>Madulla</item>
+        <item>Maskeliya</item>
+        <item>Nanuoya</item>
+        <item>Nuwara Eliya</item>
+        <item>Padiyapelella </item>
+        <item>Ragala</item>
+        <item>Ramboda</item>
+        <item>Rozella</item>
+        <item>Talawakele </item>
+        <item>Udapussallawa </item>
+        <item>Walapane</item>
+        <item>Watawala</item>
+        <item>Ambepussa</item>
+        <item>Amitirigala</item>
+        <item>Aranayaka</item>
+        <item>Bulathkohupitiya</item>
+        <item>Dehiovita</item>
+        <item>Deraniyagala</item>
+        <item>Galigamuwa </item>
+        <item>Hemmathagama</item>
+        <item>Karawanella</item>
+        <item>Kegalle</item>
+        <item>Kitulgala</item>
+        <item>Kotiyakumbura </item>
+        <item>Mawanella</item>
+        <item>Rambukkana </item>
+        <item>Ruwanwella </item>
+        <item>Thalgaspitiya </item>
+        <item>Warakapola </item>
+        <item>Yatiyantota</item>
+        <item>Ayagama</item>
+        <item>Balangoda</item>
+        <item>Eheliyagoda</item>
+        <item>Elapatha</item>
+        <item>Embilipitiya</item>
+        <item>Godakawela </item>
+        <item>Imbulpe</item>
+        <item>Kahawatta</item>
+        <item>Kalawana</item>
+        <item>Kiriella</item>
+        <item>Kolonne</item>
+        <item>Kuruwita</item>
+        <item>Nivitigala </item>
+        <item>Opanayaka</item>
+        <item>Panamure</item>
+        <item>Pelmadulla </item>
+        <item>Pelmadulla </item>
+        <item>Pohorabawa </item>
+        <item>Rakwana</item>
+        <item>Ratnapura</item>
+        <item>Weligepola </item>
+        <item>Alawwa</item>
+        <item>Bingiriya</item>
+        <item>Dambadeniya</item>
+        <item>Dandagamuwa</item>
+        <item>Galgamuwa</item>
+        <item>Giriulla</item>
+        <item>Hettipola</item>
+        <item>Hiripitiya </item>
+        <item>Ibbagamuwa </item>
+        <item>Katupotha</item>
+        <item>Kuliyapitiya</item>
+        <item>Kurunegala </item>
+        <item>Maho</item>
+        <item>Mawathagama</item>
+        <item>Melsiripura</item>
+        <item>Narammala</item>
+        <item>Nikaweratiya</item>
+        <item>pahamune</item>
+        <item>Panagamuwa </item>
+        <item>Pannala</item>
+        <item>Pannawa</item>
+        <item>Polgahawela</item>
+        <item>Potuhera</item>
+        <item>Ridigama</item>
+        <item>Wariyapola </item>
+        <item>Wawathagama</item>
+        <item>Yapahuwa</item>
+        <item>Anamaduwa</item>
+        <item>Battuluoya </item>
+        <item>Chilaw</item>
+        <item>Dankotuwa</item>
+        <item>Eluvankulam</item>
+        <item>Kalpitiya</item>
+        <item>Madampe</item>
+        <item>Mahawewa</item>
+        <item>Marawila</item>
+        <item>Mundel</item>
+        <item>Nattandiya </item>
+        <item>Nuraicholai</item>
+        <item>Palavi</item>
+        <item>Puttalam</item>
+        <item>Thillaiyadi</item>
+        <item>Wennappuwa </item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

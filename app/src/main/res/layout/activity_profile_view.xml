@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProfileViewActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileIv"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/img_profile" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/profileIv"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/nunito_semi_bold"
+                            android:text="User Name"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/usernameTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Akalanka Kaushalya"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/nunito_semi_bold"
+                            android:text="City"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/cityTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Colombo"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/nunito_semi_bold"
+                            android:text="Email"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/emailTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_bold"
+                            android:lines="2"
+                            android:text="akalankakaushalya343@gmail.com"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--Main catogory start-->
+                    <RelativeLayout
+                        android:id="@+id/homeRR2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <com.zyp.cardview.YcCardView
+                                android:id="@+id/saleCv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                app:ycCardCornerRadius="5dp"
+                                app:ycCardElevation="5dp"
+                                app:ycStartShadowColor="@color/purple_200">
+
+                                <RelativeLayout
+                                    android:id="@+id/sr"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/shape_home_catogry"
+                                    android:padding="3dp">
+
+                                    <TextView
+                                        android:id="@+id/saleTv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/baloo"
+                                        android:text="My Trees"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp" />
+                                </RelativeLayout>
+                            </com.zyp.cardview.YcCardView>
+
+                            <com.zyp.cardview.YcCardView
+                                android:id="@+id/rentCv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                app:ycCardCornerRadius="5dp"
+                                app:ycCardElevation="5dp"
+                                app:ycStartShadowColor="@color/purple_200">
+
+                                <RelativeLayout
+                                    android:id="@+id/rr"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="3dp">
+
+                                    <TextView
+                                        android:id="@+id/rentTv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/baloo"
+                                        android:text="Monthly productivity"
+                                        android:textColor="@color/purple_500"
+                                        android:textSize="18sp" />
+                                </RelativeLayout>
+                            </com.zyp.cardview.YcCardView>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!--Main catogory end-->
+                    <RelativeLayout
+                        android:id="@+id/treeRR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/homeRR2">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/tree_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="true"
+                            android:orientation="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                            app:reverseLayout="false"
+                            app:spanCount="5"
+                            app:stackFromEnd="false" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/monthRR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/homeRR2"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/month_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="true"
+                            android:orientation="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            app:reverseLayout="true"
+                            app:stackFromEnd="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

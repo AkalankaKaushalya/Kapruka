@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lobster Font Style -->
+    <!--    <style name="IntroFontFamilyStyle" parent="">-->
+    <!--        <item name="android:fontFamily">@font/senolfont</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="IntroFontFamilyStyle2" parent="">-->
+    <!--        <item name="android:fontFamily">@font/dlprass</item>-->
+    <!--    </style>-->
+
+    <style name="FullHeightDialog" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--    <style name="CustomText">-->
+    <!--        <item name="android:textAllCaps">false</item>-->
+    <!--        <item name="fontFamily">@font/archivo</item>-->
+    <!--    </style>-->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <!--    <style name="menu_labels_style">-->
+    <!--        <item name="android:background">@drawable/fab_label_background</item>-->
+    <!--        <item name="android:textColor">@color/black</item>-->
+    <!--    </style>-->
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

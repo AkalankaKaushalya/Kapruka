@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFragments.TreesFragment">
+    <!--Main catogory start-->
+    <RelativeLayout
+        android:id="@+id/homeRR2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <com.zyp.cardview.YcCardView
+                android:id="@+id/saleCv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                app:ycCardCornerRadius="5dp"
+                app:ycCardElevation="5dp"
+                app:ycStartShadowColor="@color/purple_200">
+
+                <RelativeLayout
+                    android:id="@+id/sr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_home_catogry"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/saleTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/baloo"
+                        android:text="My Trees"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </com.zyp.cardview.YcCardView>
+
+            <com.zyp.cardview.YcCardView
+                android:id="@+id/rentCv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                app:ycCardCornerRadius="5dp"
+                app:ycCardElevation="5dp"
+                app:ycStartShadowColor="@color/purple_200">
+
+                <RelativeLayout
+                    android:id="@+id/rr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/rentTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/baloo"
+                        android:text="Monthly productivity"
+                        android:textColor="@color/purple_500"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </com.zyp.cardview.YcCardView>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <!--Main catogory end-->
+    <RelativeLayout
+        android:id="@+id/treeRR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/homeRR2">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tree_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:reverseLayout="false"
+            app:spanCount="5"
+            app:stackFromEnd="false" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/nolottie1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="coconut_tree.json"
+            app:lottie_loop="true" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/addmycocount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Add cocunet tree"
+            app:icon="@drawable/ic_cocunet" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/monthRR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/homeRR2"
+        android:visibility="gone">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/nolottie"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="coconut.json"
+            app:lottie_loop="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/month_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:reverseLayout="true"
+            app:stackFromEnd="true" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/addmonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Add Month"
+            app:icon="@drawable/ic_month" />
+    </RelativeLayout>
+</RelativeLayout>
