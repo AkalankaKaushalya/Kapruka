@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import com.kapruka.UserFragments.HomeFragment;
 import com.kapruka.UserFragments.ProfileFragment;
 import com.kapruka.UserFragments.QuestionsFragment;
+import com.kapruka.UserFragments.ShopFragment;
 import com.kapruka.UserFragments.TreesFragment;
 
 
@@ -22,12 +23,16 @@ public class UserViewPageAdapter extends FragmentStatePagerAdapter {
         switch (position) {
             case 0:
                 return new HomeFragment();
+
             case 1:
                 return new QuestionsFragment();
+
             case 2:
                 return new ProfileFragment();
+
             case 3:
                 return new TreesFragment();
+
 
             default:
                 return new HomeFragment();
@@ -37,6 +42,6 @@ public class UserViewPageAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 5;
     }
 }

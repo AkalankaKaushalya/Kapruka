@@ -16,6 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.kapruka.Adapters.AskAdminAdapter;
+import com.kapruka.Ecommer.Online_ShopActivity;
 import com.kapruka.Models.AskAdminModel;
 import com.kapruka.databinding.FragmentDashBoardBinding;
 
@@ -82,6 +83,13 @@ public class DashBoardFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), AddVideoActivity.class));
+            }
+        });
+
+        binding.fabAddproduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), Online_ShopActivity.class));
             }
         });
 

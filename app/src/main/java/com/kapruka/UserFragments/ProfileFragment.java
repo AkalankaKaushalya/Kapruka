@@ -147,7 +147,7 @@ public class ProfileFragment extends Fragment {
                         binding.usertypeTv.setText(userType);
                         binding.cityTv.setText(city);
                         if (ProfilePic.equals("img")) {
-                            binding.profileIv.setImageDrawable(getResources().getDrawable(R.drawable.img_profile, null));
+                            ///binding.profileIv.setImageDrawable(getResources().getDrawable(R.drawable.img_profile, null));
                         } else {
                             Picasso.get().load(ProfilePic).into(binding.profileIv, new Callback() {
                                 @Override

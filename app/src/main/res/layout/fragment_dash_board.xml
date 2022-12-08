@@ -45,6 +45,14 @@
                 android:src="@drawable/ic_hospital"
                 app:fab_colorNormal="@color/purple_500"
                 fab:fab_title="Add Disease" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_addproduct"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/is_shop"
+                app:fab_colorNormal="@color/purple_500"
+                fab:fab_title="Shop" />
         </com.getbase.floatingactionbutton.FloatingActionsMenu>
     </RelativeLayout>
 </layout>

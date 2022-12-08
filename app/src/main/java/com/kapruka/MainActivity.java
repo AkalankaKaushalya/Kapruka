@@ -11,6 +11,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 import com.kapruka.UserAdapters.UserViewPageAdapter;
 import com.kapruka.UserFragments.HomeFragment;
+import com.kapruka.UserFragments.ShopFragment;
 import com.kapruka.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,14 +46,23 @@ public class MainActivity extends AppCompatActivity {
                         binding.fragmentContainer.setCurrentItem(1);
                         //fragment = new FavaritFragment();
                         break;
+
                     case R.id.nav_profile:
                         binding.fragmentContainer.setCurrentItem(2);
                         //fragment = new ProfileFragment();
                         break;
+
+//                    case R.id.nav_shop:
+//                        binding.fragmentContainer.setCurrentItem(3);
+//                        //fragment = new ProfileFragment();
+//                        break;
+
                     case R.id.nav_trre:
                         binding.fragmentContainer.setCurrentItem(3);
                         //fragment = new ProfileFragment();
                         break;
+
+
                 }
                 if (fragment != null) {
                     fragmentManager = getSupportFragmentManager();
@@ -81,12 +91,18 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         binding.navigation.setItemSelected(R.id.nav_home, true);
                         break;
+
                     case 1:
                         binding.navigation.setItemSelected(R.id.nav_questions, true);
                         break;
+
                     case 2:
                         binding.navigation.setItemSelected(R.id.nav_profile, true);
                         break;
+
+//                    case 3:
+//                        binding.navigation.setItemSelected(R.id.nav_shop, true);
+
                     case 3:
                         binding.navigation.setItemSelected(R.id.nav_trre, true);
                         break;
