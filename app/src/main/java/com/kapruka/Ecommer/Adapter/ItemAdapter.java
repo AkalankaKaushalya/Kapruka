@@ -1,6 +1,7 @@
 package com.kapruka.Ecommer.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.kapruka.Adapters.DiseaseAdapter;
+import com.kapruka.DiseaseViewActivity;
 import com.kapruka.Ecommer.Model.ItemModel;
 import com.kapruka.Models.DiseaseModel;
+import com.kapruka.ViewItemActivity;
 import com.kapruka.databinding.RowDiseaseBinding;
 import com.kapruka.databinding.RowItemBinding;
 import com.squareup.picasso.Picasso;
@@ -60,7 +63,11 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(context, ViewItemActivity.class);
+                intent.putExtra("ItemID", itemid);
+                intent.putExtra("UserID", userid);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
             }
         });
 

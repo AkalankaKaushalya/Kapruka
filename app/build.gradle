@@ -74,4 +74,8 @@ dependencies {
     implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.10.8'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
     implementation 'com.github.onepay-srilanka:onepay-android:1.0.0'
+
+    implementation 'com.stripe:stripe-android:15.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+    implementation 'com.google.code.gson:gson:2.9.0'
 }
