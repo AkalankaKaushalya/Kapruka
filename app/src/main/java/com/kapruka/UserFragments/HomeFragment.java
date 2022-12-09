@@ -82,8 +82,8 @@ public class HomeFragment extends Fragment {
 
         itemmoreBtn = view.findViewById(R.id.view_allshopitem);
 
-        lodeDisease();
         lodeYtVideo();
+        lodeDisease();
         loadeUser();
         lodeItem();
 

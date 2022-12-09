@@ -260,29 +260,29 @@
                                         android:layout_height="wrap_content"
                                         android:src="@drawable/noimag" />
 
-                                    <ImageView
-                                        android:id="@+id/image2"
-                                        android:layout_width="250dp"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/noimag" />
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/image2"-->
+<!--                                        android:layout_width="250dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:src="@drawable/noimag" />-->
 
-                                    <ImageView
-                                        android:id="@+id/image3"
-                                        android:layout_width="250dp"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/noimag" />
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/image3"-->
+<!--                                        android:layout_width="250dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:src="@drawable/noimag" />-->
 
-                                    <ImageView
-                                        android:id="@+id/image4"
-                                        android:layout_width="250dp"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/noimag" />
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/image4"-->
+<!--                                        android:layout_width="250dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:src="@drawable/noimag" />-->
 
-                                    <ImageView
-                                        android:id="@+id/image5"
-                                        android:layout_width="250dp"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/noimag" />
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/image5"-->
+<!--                                        android:layout_width="250dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:src="@drawable/noimag" />-->
                                 </LinearLayout>
                             </HorizontalScrollView>
                         </LinearLayout>
