@@ -122,7 +122,7 @@ public class ViewItemActivity extends AppCompatActivity {
 //                        ConfirmPaymentIntentParams confirmParams = ConfirmPaymentIntentParams
 //                                .createWithPaymentMethodCreateParams(params, paymentIntentClientSecret);
 //                        stripe.confirmPayment(ViewItemActivity.this, confirmParams);
-                        Toast.makeText(ViewItemActivity.this, "Payment completed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ViewItemActivity.this, "Payment completed..", Toast.LENGTH_SHORT).show();
                     }else {
                         Toast.makeText(ViewItemActivity.this, "Enter Card Ditales", Toast.LENGTH_SHORT).show();
                     }
