@@ -1,7 +1,7 @@
 package com.kapruka.Ecommer.Model;
 
 public class ItemModel {
-    String  ItmeID, UserID, ItmeTitle, ItmePrice, ItmeCity, ItmeDescription, DiseaseImage, ViewCount;
+    String ItmeID, UserID, ItmeTitle, ItmePrice, ItmeCity, ItmeDescription, DiseaseImage, ViewCount;
 
     public ItemModel() {
     }

@@ -17,9 +17,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.data.BarData;
-import com.github.mikephil.charting.data.BarDataSet;
-import com.github.mikephil.charting.data.BarEntry;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -29,14 +26,11 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.kapruka.Models.MyTreeModel;
 import com.kapruka.Models.ProductivityModel;
-import com.kapruka.PodactivityActivity;
 import com.kapruka.R;
 import com.kapruka.databinding.RowTreeBinding;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 public class MyTreeAdapter extends RecyclerView.Adapter<MyTreeAdapter.MyTreeHolder> {
 
@@ -174,8 +168,6 @@ public class MyTreeAdapter extends RecyclerView.Adapter<MyTreeAdapter.MyTreeHold
 //                        });
 
 
-
-
                 treehigte.setText(heigt);
                 treeage.setText(age);
                 treeid.setText(id);
@@ -183,7 +175,7 @@ public class MyTreeAdapter extends RecyclerView.Adapter<MyTreeAdapter.MyTreeHold
                 delete.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if (userid == firebaseAuth.getUid()){
+                        if (userid == firebaseAuth.getUid()) {
                             Query fquery = FirebaseDatabase.getInstance().getReference("Users")
                                     .child(firebaseAuth.getUid())
                                     .child("MyTree").orderByChild("TreeID").equalTo(id);
@@ -202,7 +194,7 @@ public class MyTreeAdapter extends RecyclerView.Adapter<MyTreeAdapter.MyTreeHold
 
                                 }
                             });
-                        }else {
+                        } else {
                             Toast.makeText(context, "You Cant Delete\n Other User Data", Toast.LENGTH_SHORT).show();
                         }
 

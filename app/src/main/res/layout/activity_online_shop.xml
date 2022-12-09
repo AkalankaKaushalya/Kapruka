@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Ecommer.Online_ShopActivity">
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/item_recycler_view"
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
         app:spanCount="2"
-        tools:listitem="@layout/row_item"/>
+        tools:listitem="@layout/row_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/additemBtn"

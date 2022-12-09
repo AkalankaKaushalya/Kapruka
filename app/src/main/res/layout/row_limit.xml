@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/limitLL"
-    android:layout_width="55dp"
-    android:layout_height="10dp"
-    android:background="#42FA0F"
-    android:layout_margin="5dp"
-    android:orientation="vertical">
 
-</LinearLayout></layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/limitLL"
+        android:layout_width="55dp"
+        android:layout_height="10dp"
+        android:background="#42FA0F"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</layout>

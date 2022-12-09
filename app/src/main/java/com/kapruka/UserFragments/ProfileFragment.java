@@ -16,7 +16,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.kapruka.R;
 import com.kapruka.SplashActivity;
 import com.kapruka.YourProblemActivity;
 import com.kapruka.databinding.FragmentProfileBinding;

@@ -114,10 +114,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:visibility="gone">
+
                 <com.github.mikephil.charting.charts.BarChart
                     android:layout_width="match_parent"
                     android:layout_height="350dp"
-                    android:id="@+id/barchart"/>
+                    android:id="@+id/barchart" />
             </LinearLayout>
 
             <LinearLayout

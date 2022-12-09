@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserFragments.ShopFragment">
+
     <TextView
         android:id="@+id/titleTv"
         android:layout_width="match_parent"
@@ -14,7 +14,8 @@
         android:textColor="#81EA65"
         android:textStyle="bold"
         android:textSize="25sp"
-        android:textAlignment="center"/>
+        android:textAlignment="center" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/item_recycler_view"
         android:layout_width="match_parent"
@@ -24,5 +25,5 @@
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
         app:spanCount="2"
-        tools:listitem="@layout/row_item"/>
+        tools:listitem="@layout/row_item" />
 </RelativeLayout>

@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import com.kapruka.UserFragments.HomeFragment;
 import com.kapruka.UserFragments.ProfileFragment;
 import com.kapruka.UserFragments.QuestionsFragment;
-import com.kapruka.UserFragments.ShopFragment;
 import com.kapruka.UserFragments.TreesFragment;
 
 

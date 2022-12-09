@@ -54,12 +54,10 @@ public class ProductivityAdapter extends RecyclerView.Adapter<ProductivityAdapte
         holder.ProdactCount.setText(count);
 
 
-
-
         holder.DelteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (uid == firebaseAuth.getUid()){
+                if (uid == firebaseAuth.getUid()) {
                     Query fquery = FirebaseDatabase.getInstance().getReference("Users")
                             .child(firebaseAuth.getUid())
                             .child("Productivity")
@@ -78,7 +76,7 @@ public class ProductivityAdapter extends RecyclerView.Adapter<ProductivityAdapte
 
                         }
                     });
-                }else {
+                } else {
                     Toast.makeText(context, "Your Can't Delete \nThis User Product", Toast.LENGTH_SHORT).show();
                 }
 

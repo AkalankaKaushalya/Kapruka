@@ -50,13 +50,13 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.MonthHolder>
         MonthModel ytVideoModel = monthModelList.get(position);
         String id = ytVideoModel.getMonth();
         String u_id = ytVideoModel.getUserID();
-        
+
 
         holder.Date.setText(id);
         holder.Delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (u_id == firebaseAuth.getUid()){
+                if (u_id == firebaseAuth.getUid()) {
                     final ProgressDialog progressDialog = new ProgressDialog(context);
                     progressDialog.setMessage("Deleting...");
                     progressDialog.show();
@@ -81,11 +81,11 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthAdapter.MonthHolder>
                             progressDialog.dismiss();
                             Toast.makeText(context, "" + error.getMessage(), Toast.LENGTH_SHORT).show();
                         }
-                    }); 
-                }else {
+                    });
+                } else {
                     Toast.makeText(context, "You Cant Delete \n This UserMonth.", Toast.LENGTH_SHORT).show();
                 }
-                
+
 
             }
         });

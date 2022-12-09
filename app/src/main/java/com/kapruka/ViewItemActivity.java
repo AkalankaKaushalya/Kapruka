@@ -1,16 +1,10 @@
 package com.kapruka;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.text.format.DateFormat;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +12,11 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -27,27 +26,22 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import com.kapruka.databinding.ActivityDiseaseViewBinding;
 import com.kapruka.databinding.ActivityViewItemBinding;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 import com.stripe.android.ApiResultCallback;
 import com.stripe.android.PaymentIntentResult;
 import com.stripe.android.Stripe;
-import com.stripe.android.model.ConfirmPaymentIntentParams;
 import com.stripe.android.model.PaymentIntent;
 import com.stripe.android.model.PaymentMethodCreateParams;
 import com.stripe.android.view.CardInputWidget;
-
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 
@@ -67,6 +61,7 @@ public class ViewItemActivity extends AppCompatActivity {
     private TextView amountTextView;
 
     String Amount;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,10 +82,10 @@ public class ViewItemActivity extends AppCompatActivity {
                 dialog.setContentView(R.layout.dialog_pay);
 
                 TextView price = dialog.findViewById(R.id.amountTextView);
-                price.setText("Rs "+Amount);
+                price.setText("Rs " + Amount);
 
                 // Configure the SDK with your Stripe publishable key so it can make requests to Stripe
-                stripe = new Stripe( getApplicationContext(),Objects.requireNonNull("pk_test_51Hy95sBTObBVmV25jlX3wuOElrRTW7ib7LKWFTvqoFf58L2Szj39Nmbzfd6MLXRzZXfytbKtDxpxO93i71sJfhIt00VpBaEbZQ"));
+                stripe = new Stripe(getApplicationContext(), Objects.requireNonNull("pk_test_51Hy95sBTObBVmV25jlX3wuOElrRTW7ib7LKWFTvqoFf58L2Szj39Nmbzfd6MLXRzZXfytbKtDxpxO93i71sJfhIt00VpBaEbZQ"));
                 // Create a PaymentIntent by calling the server's endpoint.
                 MediaType mediaType = MediaType.get("application/json; charset=utf-8");
 
@@ -123,7 +118,7 @@ public class ViewItemActivity extends AppCompatActivity {
 //                                .createWithPaymentMethodCreateParams(params, paymentIntentClientSecret);
 //                        stripe.confirmPayment(ViewItemActivity.this, confirmParams);
                         Toast.makeText(ViewItemActivity.this, "Payment completed..", Toast.LENGTH_SHORT).show();
-                    }else {
+                    } else {
                         Toast.makeText(ViewItemActivity.this, "Enter Card Ditales", Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -150,7 +145,7 @@ public class ViewItemActivity extends AppCompatActivity {
                         binding.itemnameTv.setText(titel);
                         binding.itemDescriptionTv.fromHtml(disease);
                         binding.itemcityTv.setText(city);
-                        binding.itemPriceTv.setText("Rs "+price);
+                        binding.itemPriceTv.setText("Rs " + price);
                         Amount = price;
 
                         if (image.equals("img")) {
@@ -177,7 +172,6 @@ public class ViewItemActivity extends AppCompatActivity {
     }
 
 
-
     private void displayAlert(@NonNull String title, @Nullable String message) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this)
                 .setTitle(title)
@@ -185,6 +179,7 @@ public class ViewItemActivity extends AppCompatActivity {
         builder.setPositiveButton("Ok", null);
         builder.create().show();
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -194,7 +189,8 @@ public class ViewItemActivity extends AppCompatActivity {
 
     private void onPaymentSuccess(@NonNull final Response response) throws IOException {
         Gson gson = new Gson();
-        Type type = new TypeToken<Map<String, String>>(){}.getType();
+        Type type = new TypeToken<Map<String, String>>() {
+        }.getType();
         Map<String, String> responseMap = gson.fromJson(
                 Objects.requireNonNull(response.body()).string(),
                 type
@@ -203,10 +199,13 @@ public class ViewItemActivity extends AppCompatActivity {
     }
 
     private static final class PayCallback implements okhttp3.Callback {
-        @NonNull private final WeakReference<ViewItemActivity> activityRef;
+        @NonNull
+        private final WeakReference<ViewItemActivity> activityRef;
+
         PayCallback(@NonNull ViewItemActivity activity) {
             activityRef = new WeakReference<>(activity);
         }
+
         @Override
         public void onFailure(@NonNull Call call, @NonNull IOException e) {
             final ViewItemActivity activity = activityRef.get();
@@ -217,6 +216,7 @@ public class ViewItemActivity extends AppCompatActivity {
 //                    Toast.makeText(activity, "Error: " + e.toString(), Toast.LENGTH_LONG).show()
 //            );
         }
+
         @Override
         public void onResponse(@NonNull Call call, @NonNull final Response response)
                 throws IOException {
@@ -234,10 +234,13 @@ public class ViewItemActivity extends AppCompatActivity {
     }
 
     private static final class PaymentResultCallback implements ApiResultCallback<PaymentIntentResult> {
-        @NonNull private final WeakReference<ViewItemActivity> activityRef;
+        @NonNull
+        private final WeakReference<ViewItemActivity> activityRef;
+
         PaymentResultCallback(@NonNull ViewItemActivity activity) {
             activityRef = new WeakReference<>(activity);
         }
+
         @Override
         public void onSuccess(@NonNull PaymentIntentResult result) {
             final ViewItemActivity activity = activityRef.get();
@@ -261,6 +264,7 @@ public class ViewItemActivity extends AppCompatActivity {
                 );
             }
         }
+
         @Override
         public void onError(@NonNull Exception e) {
             final ViewItemActivity activity = activityRef.get();

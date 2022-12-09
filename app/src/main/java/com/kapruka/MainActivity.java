@@ -11,7 +11,6 @@ import androidx.viewpager.widget.ViewPager;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 import com.kapruka.UserAdapters.UserViewPageAdapter;
 import com.kapruka.UserFragments.HomeFragment;
-import com.kapruka.UserFragments.ShopFragment;
 import com.kapruka.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

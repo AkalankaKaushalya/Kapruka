@@ -1,13 +1,5 @@
 package com.kapruka.Ecommer;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -20,10 +12,16 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.google.android.exoplayer2.offline.ProgressiveDownloader;
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -33,9 +31,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.kapruka.AdminFragments.AddDiseaseActivity;
 import com.kapruka.R;
-import com.kapruka.databinding.ActivityAddDiseaseBinding;
 import com.kapruka.databinding.ActivityAddProdactBinding;
 import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
@@ -109,21 +105,19 @@ public class addProdactActivity extends AppCompatActivity {
         });
 
 
-
         findViewById(R.id.postBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String title = binding.titleEt.getText().toString();
                 String price = binding.priceEt.getText().toString();
 
-                if (title.isEmpty() || price.isEmpty() ||  Discription.getText().toString().isEmpty()) {
+                if (title.isEmpty() || price.isEmpty() || Discription.getText().toString().isEmpty()) {
                     Toast.makeText(addProdactActivity.this, "Cheak Your Title, Price & Disease Discription\n is not filled", Toast.LENGTH_SHORT).show();
                 } else if (Image1 == null) {
                     Toast.makeText(addProdactActivity.this, "important! \n First Image not add", Toast.LENGTH_SHORT).show();
                 } else if (City == "Select Your City") {
                     Toast.makeText(addProdactActivity.this, "Select City", Toast.LENGTH_SHORT).show();
-                }
-                else {
+                } else {
                     progressDialog.setMessage("Uploading your Product Image");
                     progressDialog.show();
                     String filePathAndName = "Shop/" + firebaseAuth.getUid() + title;

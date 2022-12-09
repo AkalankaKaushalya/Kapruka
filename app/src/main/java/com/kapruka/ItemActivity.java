@@ -1,11 +1,10 @@
 package com.kapruka;
 
+import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.view.View;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -21,7 +20,8 @@ import java.util.List;
 public class ItemActivity extends AppCompatActivity {
     List<ItemModel> itemModelList;
     ItemAdapter itemAdapter;
-    private RecyclerView  ItemRv;
+    private RecyclerView ItemRv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -19,11 +19,11 @@
         android:title="Profile"
         app:cnb_iconColor="@color/purple_500" />
 
-<!--    <item-->
-<!--        android:id="@+id/nav_shop"-->
-<!--        android:icon="@drawable/is_shop"-->
-<!--        android:title="Coc Store"-->
-<!--        app:cnb_iconColor="@color/purple_500" />-->
+    <!--    <item-->
+    <!--        android:id="@+id/nav_shop"-->
+    <!--        android:icon="@drawable/is_shop"-->
+    <!--        android:title="Coc Store"-->
+    <!--        app:cnb_iconColor="@color/purple_500" />-->
 
     <item
         android:id="@+id/nav_trre"

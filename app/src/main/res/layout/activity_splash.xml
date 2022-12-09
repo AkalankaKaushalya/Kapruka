@@ -8,11 +8,13 @@
         android:layout_height="match_parent"
         tools:context=".SplashActivity"
         android:background="@drawable/background">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".SplashActivity"
-        android:background="#31000000"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".SplashActivity"
+            android:background="#31000000" />
+
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/splashIv"
             android:layout_width="200dp"

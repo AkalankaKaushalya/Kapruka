@@ -11,19 +11,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.kapruka.Adapters.DiseaseAdapter;
-import com.kapruka.DiseaseViewActivity;
 import com.kapruka.Ecommer.Model.ItemModel;
-import com.kapruka.Models.DiseaseModel;
 import com.kapruka.ViewItemActivity;
-import com.kapruka.databinding.RowDiseaseBinding;
 import com.kapruka.databinding.RowItemBinding;
 import com.squareup.picasso.Picasso;
 
 import java.text.DecimalFormat;
 import java.util.List;
-
-import io.github.mthli.knife.KnifeText;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
     RowItemBinding binding;
